@@ -1,3 +1,6 @@
+# Yahtzee project specific
+Yahtzee/savedExperiment.json
+
 # User-specific files
 *.suo
 *.user

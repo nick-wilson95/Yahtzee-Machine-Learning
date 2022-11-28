@@ -58,7 +58,7 @@ public static class Terminal
         Console.Clear();
         
         var reportTotals = new List<double>();
-        var reportFrequency = 120 / (int)experiment.IterationComplexity;
+        var reportFrequency = (int)(60 / experiment.IterationComplexity);
         var reportSum = 0d;
 
         var iteration = 1;
@@ -69,7 +69,7 @@ public static class Terminal
 
             reportSum += result.Average();
             
-            Console.WriteLine($"Iteration {iteration}: {(int)result.First()} - {(int)result.Average()} - {(int)result.Last()}");
+            Console.WriteLine($"Iteration {iteration}: Worst {(int)result.First()} - avg {(int)result.Average()} - best {(int)result.Last()}");
 
             if (iteration % reportFrequency == 0)
             {

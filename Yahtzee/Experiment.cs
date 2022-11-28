@@ -21,7 +21,7 @@ public class Experiment : ISerialiseable<Experiment>
         * _gamesPerGeneration
         * Agents[0].NumHiddenLayers
         * Math.Pow(Agents[0].HiddenLayerSize, 2)
-        / 5_000_000;
+        / 1_000_000;
 
     public AiPlayer[] Agents { get; private set; }
 
