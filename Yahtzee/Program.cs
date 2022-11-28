@@ -1,0 +1,3 @@
+﻿using Yahtzee;
+
+Terminal.Start();
